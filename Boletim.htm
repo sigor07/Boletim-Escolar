@@ -1,0 +1,532 @@
+    <!DOCTYPE html>
+    <html>
+    <head>
+      <meta charset="UTF-8" />
+
+    <script>
+          function mudar() {
+            document.bgColor="gold"     
+    }   </script>
+
+    <script>
+          function mudarr() {
+            document.bgColor="white"     
+    }   </script>
+    <style>
+    <!--
+    a:active     { font-size: 18pt }
+    -->
+    </style>
+    </head>
+
+  <body onload="setTimeout('mudar()',5000)">
+      <a href onmouseover="javascript:mudarr()">
+  <center><font color="blue" size=8>Boletim Escolar</font></center>
+  <BR>
+
+  <table border="0" width="100%">
+  <caption><center><marquee behavior=alternate bgcolor=green><font color="white" size=4>Confira o resultado e suas notas!</font></marquee></center>
+  </caption>
+  <tr bgcolor="green" >
+    <td align=center>&nbsp;<font color="white">Matéria</font></td>
+    <td align=center>&nbsp;<font color="white">1º Bimestre</font></td>
+    <td align=center>&nbsp;<font color="white">2º Bimestre</font></td>
+    <td align=center>&nbsp;<font color="white">3º Bimestre</font></td>
+    <td align=center>&nbsp;<font color="white">4º Bimestre</font></td>
+    <td align=center>&nbsp;<font color="white">Média</font></td>
+    <td align=center>&nbsp;<font color="white">Resultado</font></td>
+  </tr>
+  <tr bgcolor=lightblue>
+    <td bgcolor=green align=right>&nbsp;<font color="white">Matemática</font></td>
+    <td align=center>&nbsp;
+    <script>
+    var nota1=prompt("Digite a nota do 1º Bimestre em Matemática:","")
+    var resultado1=Number(nota1)
+    document.write(resultado1)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota2=prompt("Digite a nota do 2º Bimestre em Matemática:","")
+    var resultado2=Number(nota2)
+    document.write(resultado2)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota3=prompt("Digite a nota do 3º Bimestre em Matemática:","")
+    var resultado3=Number(nota3)
+    document.write(resultado3)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota4=prompt("Digite a nota do 4º Bimestre em Matemática:","")
+    var resultado4=Number(nota4)
+    document.write(resultado4)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var resulta=((resultado1+resultado2+resultado3+resultado4)/4)
+    document.write(resulta)
+    </script></td>
+    <td align=center>&nbsp;<script>
+                        if(resulta>=7) {
+                      var nome="<font color=blue><b>Aprovado</b></font>"
+                      document.write(nome)
+                          }
+                        if(resulta<7) {       
+                                var nome1="<font color=red><b>Reprovado</b></font>"
+                                document.write(nome1)
+            }
+              </script>
+    </td>
+  </tr>
+
+  <tr bgcolor=lightblue>
+    <td bgcolor=green align=right>&nbsp;<font color="white">Português</font></td>
+    <td align=center>&nbsp;
+    <script>
+    var nota11=prompt("Digite a nota do 1º Bimestre em Português:","")
+    var resultado11=Number(nota11)
+    document.write(resultado11)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota21=prompt("Digite a nota do 2º Bimestre em Português:","")
+    var resultado21=Number(nota21)
+    document.write(resultado21)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota31=prompt("Digite a nota do 3º Bimestre em Português:","")
+    var resultado31=Number(nota31)
+    document.write(resultado31)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota41=prompt("Digite a nota do 4º Bimestre em Português:","")
+    var resultado41=Number(nota41)
+    document.write(resultado41)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var resulta1=((resultado11+resultado21+resultado31+resultado41)/4)
+    document.write(resulta1)
+    </script></td>
+    <td align=center>&nbsp;<script>
+              if(resulta1>=7) {
+                  var nome3="<font color=blue><b>Aprovado</b></font>"
+                      document.write(nome3)
+                    }
+              if(resulta1<7) {
+                var nome4="<font color=red><b>Reprovado</b></font>"
+                    document.write(nome4) }
+              </script>
+    </td>
+  </tr>
+
+  <tr bgcolor=lightblue>
+    <td bgcolor=green align=right>&nbsp;<font color="white">Física</font></td>
+    <td align=center>&nbsp;
+    <script>
+    var nota12=prompt("Digite a nota do 1º Bimestre em Física:","")
+    var resultado12=Number(nota12)
+    document.write(resultado12)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota22=prompt("Digite a nota do 2º Bimestre em Física:","")
+    var resultado22=Number(nota22)
+    document.write(resultado22)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota32=prompt("Digite a nota do 3º Bimestre em Física:","")
+    var resultado32=Number(nota32)
+    document.write(resultado32)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota42=prompt("Digite a nota do 4º Bimestre em Física:","")
+    var resultado42=Number(nota42)
+    document.write(resultado42)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var resulta2=((resultado12+resultado22+resultado32+resultado42)/4)
+    document.write(resulta2)
+    </script></td>
+    <td align=center>&nbsp;<script>
+              if(resulta2>=7) {
+                var nome5="<font color=blue><b>Aprovado</b></font>"
+                    document.write(nome5)
+              }
+              if(resulta2<7) {
+                var nome6="<font color=red><b>Reprovado</b></font>"          
+                    document.write(nome6) }
+              </script>
+    </td>
+  </tr>
+
+  <tr bgcolor=lightblue>
+    <td bgcolor=green align=right>&nbsp;<font color="white">Química</font></td>
+    <td align=center>&nbsp;
+    <script>
+    var nota13=prompt("Digite a nota do 1º Bimestre em Química:","")
+    var resultado13=Number(nota13)
+    document.write(resultado13)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota23=prompt("Digite a nota do 2º Bimestre em Química:","")
+    var resultado23=Number(nota23)
+    document.write(resultado23)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota33=prompt("Digite a nota do 3º Bimestre em Química:","")
+    var resultado33=Number(nota33)
+    document.write(resultado33)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota43=prompt("Digite a nota do 4º Bimestre em Química:","")
+    var resultado43=Number(nota43)
+                  document.write(resultado3)                      
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var resulta3=((resultado13+resultado23+resultado33+resultado43)/4)
+    document.write(resulta3)
+    </script></td>
+    <td align=center>&nbsp;<script>
+              if(resulta3>=7) {
+                var nome7="<font color=blue><b>Aprovado</b></font>"
+                  document.write(nome7)
+              }
+              if(resulta3<7) {
+                  var nome8="<font color=red><b>Reprovado</b></font>"
+                    document.write(nome8) }
+              
+    </script>
+    </td>
+  </tr>
+
+  <tr bgcolor=lightblue>
+    <td bgcolor=green align=right>&nbsp;<font color="white">Geografia</font></td>
+    <td align=center>&nbsp;
+    <script>
+    var nota14=prompt("Digite a nota do 1º Bimestre em Geografia:","")
+    var resultado14=Number(nota14)
+    document.write(resultado14)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota24=prompt("Digite a nota do 2º Bimestre em Geografia:","")
+    var resultado24=Number(nota24)
+    document.write(resultado24)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota34=prompt("Digite a nota do 3º Bimestre em Geografia:","")
+    var resultado34=Number(nota34)
+    document.write(resultado34)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota44=prompt("Digite a nota do 4º Bimestre em Geografia:","")
+    var resultado44=Number(nota44)
+                  document.write(resultado44)                      
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var resulta4=((resultado14+resultado24+resultado34+resultado44)/4)
+    document.write(resulta4)
+    </script></td>
+    <td align=center>&nbsp;<script>
+              if(resulta4>=7) {
+                var nome9="<font color=blue><b>Aprovado</b></font>"
+                  document.write(nome9)
+              }
+              if(resulta4<7) {
+                  var nome10="<font color=red><b>Reprovado</b></font>"
+                    document.write(nome10) }
+              
+    </script>
+    </td>
+  </tr>
+
+  <tr bgcolor=lightblue>
+    <td bgcolor=green align=right>&nbsp;<font color="white">Biologia</font></td>
+    <td align=center>&nbsp;
+    <script>
+    var nota15=prompt("Digite a nota do 1º Bimestre em Biologia:","")
+    var resultado15=Number(nota15)
+    document.write(resultado15)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota25=prompt("Digite a nota do 2º Bimestre em Biologia:","")
+    var resultado25=Number(nota25)
+    document.write(resultado25)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota35=prompt("Digite a nota do 3º Bimestre em Biologia:","")
+    var resultado35=Number(nota35)
+    document.write(resultado35)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota45=prompt("Digite a nota do 4º Bimestre em Biologia:","")
+    var resultado45=Number(nota45)
+                  document.write(resultado45)                      
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var resulta5=((resultado15+resultado25+resultado35+resultado45)/4)
+    document.write(resulta5)
+    </script></td>
+    <td align=center>&nbsp;<script>
+              if(resulta5>=7) {
+                var nome11="<font color=blue><b>Aprovado</b></font>"
+                  document.write(nome11)
+              }
+              if(resulta5<7) {
+                  var nome12="<font color=red><b>Reprovado</b></font>"
+                    document.write(nome12) }
+    </script>
+    </td>
+  </tr>
+
+  <tr bgcolor=lightblue>
+    <td bgcolor=green align=right>&nbsp;<font color="white">Inglês</font></td>
+    <td align=center>&nbsp;
+    <script>
+    var nota16=prompt("Digite a nota do 1º Bimestre em Inglês:","")
+    var resultado16=Number(nota16)
+    document.write(resultado16)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota26=prompt("Digite a nota do 2º Bimestre em Inglês:","")
+    var resultado26=Number(nota26)
+    document.write(resultado26)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota36=prompt("Digite a nota do 3º Bimestre em Inglês:","")
+    var resultado36=Number(nota36)
+    document.write(resultado36)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota46=prompt("Digite a nota do 4º Bimestre em Inglês:","")
+    var resultado46=Number(nota46)
+                  document.write(resultado46)                      
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var resulta6=((resultado16+resultado26+resultado36+resultado46)/4)
+    document.write(resulta6)
+    </script></td>
+    <td align=center>&nbsp;<script>
+              if(resulta6>=7) {
+                var nome13="<font color=blue><b>Aprovado</b></font>"
+                  document.write(nome13)
+              }
+              if(resulta6<7) {
+                  var nome14="<font color=red><b>Reprovado</b></font>"
+                    document.write(nome14) }
+    </script>
+    </td>
+  </tr>
+
+  <tr bgcolor=lightblue>
+    <td bgcolor=green align=right>&nbsp;<font color="white">História</font></td>
+    <td align=center>&nbsp;
+    <script>
+    var nota17=prompt("Digite a nota do 1º Bimestre em História:","")
+    var resultado17=Number(nota17)
+    document.write(resultado17)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota27=prompt("Digite a nota do 2º Bimestre em História:","")
+    var resultado27=Number(nota27)
+    document.write(resultado27)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota37=prompt("Digite a nota do 3º Bimestre em História:","")
+    var resultado37=Number(nota37)
+    document.write(resultado37)
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var nota47=prompt("Digite a nota do 4º Bimestre em História:","")
+    var resultado47=Number(nota47)
+                  document.write(resultado47)                      
+    </script></td>
+    <td align=center>&nbsp;<script>
+    var resulta7=((resultado17+resultado27+resultado37+resultado47)/4)
+    document.write(resulta7)
+    </script></td>
+    <td align=center>&nbsp;<script>
+              if(resulta7>=7) {
+                var nome15="<font color=blue><b>Aprovado</b></font>"
+                  document.write(nome15)
+              }
+              if(resulta7<7) {
+                  var nome16="<font color=red><b>Reprovado</b></font>"
+                    document.write(nome16) }
+    </script>
+    </td>
+  </tr>
+
+  </table>
+  <p align=righ>
+  <form>
+  <input type="button" value="Resultado" onclick="result()">
+  <input type=button value="Matemática" onclick="porque()">
+  <input type=button value="Português" onclick="porque1()">
+  <input type=button value="Física" onclick="porque2()">
+  <input type=button value="Química" onclick="porque3()">
+  <input type=button value="Geografia" onclick="porque4()">
+  <input type=button value="Biologia" onclick="porque5()">
+  <input type=button value="Inglês" onclick="porque6()">
+  <input type=button value="História" onclick="porque7()">
+  </form></p>
+  </a>
+
+  <script>
+  // Quanto faltou para passar de ano ou quanto sobrou!!! 
+  //MATEMÁTICA	
+            function porque() { 
+      var calculo11=Math.abs((resultado1+resultado2+resultado3+resultado4)-200)
+          if(resulta>=7) {
+      alert(" Você passou de ano em Matemática sobrando "+calculo11) 
+        }
+        else {
+      alert("Você reprovou nesta matéria porque faltou "+calculo11+ " pontos.")
+          }
+    }
+  </script>
+
+  <script>
+
+  // Quanto faltou para passar de ano ou quanto sobrou!!! 
+  //PORTUGUÊS	
+            function porque1() { 
+      var calculo111=Math.abs((resultado11+resultado21+resultado31+resultado41)-200)
+          if(resulta1>=7) {
+      alert(" Você passou de ano em Português sobrando "+calculo111) 
+        }
+        else {
+      alert("Você reprovou nesta matéria porque faltou "+calculo111+ " pontos.")
+          }
+    }
+  </script>
+
+  <script>
+
+  // Quanto faltou para passar de ano ou quanto sobrou!!! 
+  //FÍSICA
+            function porque2() { 
+      var calculo1111=Math.abs((resultado12+resultado22+resultado32+resultado42)-200)
+          if(resulta2>=7) {
+      alert(" Você passou de ano em Física sobrando "+calculo1111) 
+        }
+        else {
+      alert("Você reprovou nesta matéria porque faltou "+calculo1111+ " pontos.")
+          }
+    }
+  </script>
+
+  <script>
+
+  // Quanto faltou para passar de ano ou quanto sobrou!!! 
+  //QUÍMICA	
+            function porque3() { 
+      var calculo123=Math.abs((resultado13+resultado23+resultado33+resultado43)-200)
+          if(resulta3>=7) {
+      alert(" Você passou de ano em Química sobrando "+calculo123) 
+        }
+        else {
+      alert("Você reprovou nesta matéria porque faltou "+calculo123+ " pontos.")
+          }
+    }
+  </script>
+
+  <script>
+
+  // Quanto faltou para passar de ano ou quanto sobrou!!! 
+  //GEOGRAFIA	
+            function porque4() { 
+      var calculo1234=Math.abs((resultado14+resultado24+resultado34+resultado44)-200)
+          if(resulta4>=7) {
+      alert(" Você passou de ano em Geografia sobrando "+calculo1234) 
+        }
+        else {
+      alert("Você reprovou nesta matéria porque faltou "+calculo1234+ " pontos.")
+          }
+    }
+  </script>
+
+  <script>
+  
+  // Quanto faltou para passar de ano ou quanto sobrou!!! 
+  //BIOLOGIA
+            function porque5() { 
+      var calculo12345=Math.abs((resultado15+resultado25+resultado35+resultado45)-200)
+          if(resulta5>=7) {
+      alert(" Você passou de ano em Biologia sobrando "+calculo12345) 
+        }
+        else {
+      alert("Você reprovou nesta matéria porque faltou "+calculo12345+ " pontos.")
+          }
+    }
+  </script>
+
+  <script>
+
+  // Quanto faltou para passar de ano ou quanto sobrou!!! 
+  //INGLÊS
+            function porque6() { 
+      var calculo123456=Math.abs((resultado16+resultado26+resultado36+resultado46)-200)
+          if(resulta6>=7) {
+      alert(" Você passou de ano em Inglês sobrando "+calculo123456) 
+        }
+        else {
+      alert("Você reprovou nesta matéria porque faltou "+calculo123456+ " pontos.")
+          }
+    }
+  </script>
+
+  <script>
+  
+  // Quanto faltou para passar de ano ou quanto sobrou!!! 
+  //HISTÓRIA		
+            function porque7() { 
+      var calculo1234567=Math.abs((resultado17+resultado27+resultado37+resultado47)-200)
+          if(resulta7>=7) {
+      alert(" Você passou de ano em História sobrando "+calculo1234567) 
+        }
+        else {
+      alert("Você reprovou nesta matéria porque faltou "+calculo1234567+ " pontos.")
+          }
+    }
+  </script>
+
+  <script>
+          function result() {   
+                if(resulta>=7 && resulta1>=7 && resulta2>=7 && resulta3>=7 && resulta4>=7 && resulta5>=7 && resulta6>=7 && resulta7>=7) {
+          alert('Você passou de ano!!!!') 
+          }
+          else {
+          alert('Você reprovou de ano!!!')
+  }
+  }       
+  </script>
+  Você ficou em Dependência:<font color=white>_</font> 
+  <script>
+            if(resulta>=7 && resulta1>=7 && resulta2>=7 && resulta3>=7 && resulta4>=7 && resulta5>=7 && resulta6>=7 && resulta7>=7) {
+            document.write("Nenhuma.")
+            }
+          if(resulta<7) {
+            var resp1="Matemática "
+        document.write(resp1)
+  }
+          if(resulta1<7) {
+            var resp2="Português "
+              document.write(resp2) }
+          if(resulta2<7) {
+                var resp3="Física "
+              document.write(resp3) }
+          if(resulta3<7) {
+                  var resp4="Química "
+              document.write(resp4) }
+          if(resulta4<7) {
+                      var resp5="Geografia "
+              document.write(resp5) } 
+          if(resulta5<7) {
+                      var resp6="Biologia "
+              document.write(resp6) } 
+          if(resulta6<7) {
+                      var resp7="Inglês "
+              document.write(resp7) } 
+          if(resulta7<7) {
+                      var resp8="História "
+              document.write(resp8) } 
+
+  </script>
+
+                  
+  </body></html>
